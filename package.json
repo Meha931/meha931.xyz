@@ -1,0 +1,19 @@
+{
+  "name": "meha931.xyz",
+  "version": "1.0.0",
+  "description": "The website",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meha931/meha931.xyz.git"
+  },
+  "author": "Meha931",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meha931/meha931.xyz/issues"
+  },
+  "homepage": "https://github.com/Meha931/meha931.xyz#readme"
+}
