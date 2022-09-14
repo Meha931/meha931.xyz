@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Test</title>
-    <link rel="stylesheet" href="style.css">
+    <%- include("../includables/head", {title: "Meha931"}); %>
 </head>
 <body>
-    <h1>Test: index.ejs</h1>
+<div class="container">
+    <%- include("../includables/header", {
+        title: "Meha931's website",
+        subtitle: "Now definitely completely online"
+    }); %>
+    <div class="content">
+        <%- include("../includables/sidebar", {
+            title: "Links",
+            pretext: "Some other pages:",
+            list: {
+                type: "ul",
+                entries: [
+                    "<a href=\"https://steamcommunity.com/id/Meha931\">Steam</a>",
+                    "<a href=\"https://github.com/Meha931\">Github</a> (and <a "+
+                    "href=\"https://meha931.github.io\">old site</a>)",
+                ]
+            },
+            posttext: "Uh... and there'll be more soon."
+        }); %>
+        <h1>Hewlo!</h1>
+        <p>
+            Welcome to the new webhome of mine!<br>
+            Being hosting it at a dedicated server, I'm now able to
+            do more interactive things like dynamically creating
+            pages or counting visitors. I don't know how to make it
+            all properly yet, so expect some silly code from me.<br>
+            You can see the source code for the server <a
+            href="https://github.com/Meha931/meha931.xyz">here</a>.
+        </p>
+        <p>
+            And so... I don't know what else to put here, so I'll
+            just list some technical details:
+        </p>
+        <%- include("../includables/list", {
+            type: "ul",
+            entries: [
+                "The pages are hosted at a very weak VPS that I for about 1$/month. "+
+                "It was planned to use it as a proxy to my Raspberry Pi, but hosting "+
+                "pages directly at the VPS was a better idea, because I can't yet let my "+
+                "RPi be powered on while it's unwatched.",
+                "The server uses Nginx to serve most files, but passes requests for "+
+                ".ejs files to local Node server. EJS is like PHP but in JS, <s>or so "+
+                "I think</s>.",
+                "<s>Most</s> traffic to this server is also proxied through Cloudflare, "+
+                "<s>although it still might get DDOSed probably so don't do it please</s>. "+
+                "I think Cloudflare also overrides my Let's Encrypt certificates somehow.",
+                "Todo: make an FTP and maybe a mail servers, port some games from the "+
+                "old website, actually add view counts, make <s>a blog</s> just a bio... "+
+                "It's still a work in progress!"
+            ]
+        }); %>
+    </div>
+    <%- include("../includables/footer", {
+    }); %>
+</div>
 </body>
 </html>
