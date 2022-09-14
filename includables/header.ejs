@@ -4,6 +4,14 @@
         gross value should be included, can't be changed
         unlike head.ejs, where net value is used and can be added to\.
     */ %>
-    <h1><%- title %></h1>
-    <p><%- subtitle %></p>
+    <h1>
+        <% if (typeof title !== "undefined") { %>
+            <%- title %>
+        <% } else { %>
+            Untitled
+        <% } %>
+    </h1>
+    <% if (typeof subtitle !== "undefined") { %>
+        <p><%- subtitle %></p>
+    <% } %>
 </div>

@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>404</title>
+    <%- include("../includables/head", {title: "404"}); %>
 </head>
 <body>
-    <h1>Test: 404.ejs</h1>
+<div class="container">
+    <%- include("../includables/header", {
+        title: "404",
+        subtitle: "Not found"
+    }); %>
+    <div class="content">
+        <p>Um... Perhaps you should go back?</p>
+        <br>
+        <br>
+        <br>
+        <p>
+            What a desert.<br>
+            An icy desert &#129482;
+        </p>
+    </div>
+    <%- include("../includables/footer", {
+        right: "<a href=\"/\">To index</a>"
+    }); %>
+</div>
 </body>
 </html>

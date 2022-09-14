@@ -1,3 +1,9 @@
 <meta charset = "UTF-8">
-<title><%- title %></title>
+<title>
+    <% if (typeof title !== "undefined") { %>
+        <%- title %>
+    <% } else { %>
+        Undefined
+    <% } %>
+</title>
 <link rel="stylesheet" href="/style.css">
