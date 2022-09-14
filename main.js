@@ -43,6 +43,6 @@ website.get("*", (req, res) => {
 
 //website.use(express.static(__dirname+"/"+root)); // sends raw .ejs as downloadable file
 
-website.listen(13377, () => {
+website.listen(10931, () => {
     console.log("Ready");
 });
