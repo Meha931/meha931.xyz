@@ -1,0 +1,16 @@
+<div class="footer">
+    <p class="right">
+        <% if (typeof right !== "undefined") { %>
+            <%- right %>
+        <% } else { %>
+            <a href="styletest.ejs">Glacier</a> by Meha931
+        <% } %>
+    </p>
+    <p class="left">
+        <% if (typeof left !== "undefined") { %>
+            <%- left %>
+        <% } else { %>
+            &nbsp;
+        <% } %>
+    </p>
+</div>

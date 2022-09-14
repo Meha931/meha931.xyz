@@ -29,7 +29,7 @@ website.get(/^\/.*\.ejs$/, (req, res) => { // "/***.ejs"
     console.log(p);
     ejs.renderFile(p, {}, {}, (err, str) => {
         if (err) {
-            //console.log(err);
+            console.log(err);
             res.sendStatus(400);
             return;
         }

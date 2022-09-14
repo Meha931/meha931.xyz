@@ -1,0 +1,14 @@
+<div class="sidebar">
+    <% if (typeof title !== "undefined") { %>
+        <h1><%- title %></h1>
+    <% } %>
+    <% if (typeof pretext !== "undefined") { %>
+        <p><%- pretext %></p>
+    <% } %>
+    <% if (typeof list !== "undefined") { %>
+        <%- include("../includables/list", list); %>
+    <% } %>
+    <% if (typeof posttext !== "undefined") { %>
+        <p><%- posttext %></p>
+    <% } %>
+</div>

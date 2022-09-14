@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include("../includables/head", {title: "Styletest"}); %>
+</head>
+<body>
+<div class="container">
+    <%- include("../includables/header", {
+        title: "Lorem ipsum",
+        subtitle: "Dolor sit amet, consectetur adipiscing"
+    }); %>
+    <div class="content">
+        <%- include("../includables/sidebar", {
+            title: "Elit",
+            pretext: "Duis ac sagittis sapien. Interdum et malesuada fames:",
+            list: {
+                type: "ul",
+                entries: [
+                    "Ac ante ipsum;",
+                    "Primis in faucibus;",
+                    "Mauris vestibulum."
+                ]
+            },
+            posttext: "Morbi purus enim, ullamcorper id auctor."
+        }); %>
+        <h1>Elit quis tempor</h1>
+        <p>
+            Laoreet, est felis dapibus metus, a vestibulum dolor nisi quis nunc.<br>
+            Nam venenatis iaculis elementum.<br>
+            Suspendisse ultrices pretium metus, et pharetra justo pulvinar sed.
+            Morbi dapibus dui odio, nec elementum nisi sodales hendrerit. Proin
+            eleifend mauris lorem, nec rhoncus odio porta id.
+        </p>
+        <p>
+            Donec sed sem id neque mattis pulvinar eget et metus? Vestibulum suscipit:
+        </p>
+        <%- include("../includables/list", {
+            type: "ul",
+            entries: [
+                "Dui eu maximus rhoncus;",
+                "Urna ante bibendum eros:",
+                {
+                    type: "ul",
+                    entries: [
+                        "Sed varius nisi libero;",
+                        "Quis laoreet nisi euismod et;",
+                        "Suspendisse finibus sodales erat in semper;"
+                    ]
+                },
+                "At maximus orci risus ut orci."
+            ]
+        }); %>
+        <%- include("../includables/list", {
+            type: "ol",
+            entries: [
+                "Duis vel turpis nec purus fringilla;",
+                "Tempor quis et velit;",
+                "Suspendisse eu dolor placerat:",
+                {
+                    type: "ol",
+                    entries: [
+                        "Dictum elit quis;",
+                        "Praesent faucibus vel;",
+                        "Felis vel faucibus;"
+                    ]
+                },
+                "...",
+                "Eleifend massa!"
+            ]
+        }); %>
+        <p>
+            Curabitur venenatis nec dui quis interdum.
+        </p>
+    </div>
+    <%- include("../includables/footer", {
+        left: "Etiam: et tortor quis",
+        right: "<a href=\"/\">To index</a>"
+    }); %>
+</div>
+</body>
+</html>

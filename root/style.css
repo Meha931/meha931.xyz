@@ -1,3 +1,94 @@
 body {
+    font-family: Arial, sans-serif;
+    background: #eef;
+    margin: 0;
+}
+.container {
+    width: 80%;
+    min-width: 500px;
+    margin: 0 auto;
+    background: #cce;
+    border: solid thin;
+}
+
+.header {
+    background: #59d;
+    padding: 20px;
+} .header h1 {
+    color: #fed;
+    margin: 0.25em 0;
+    font-size: 40px;
+    font-weight: bold;
+} .header p {
+    color: #edc;
+    margin: 0 0 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content {
+    /* margin-right: 250px; */
+    min-height: 200px;
+    padding: 10px 20px;
+}
+
+.sidebar {
+    margin-right: -20px; /* = .content padding-right */
+    margin-top: -10px; /* = .content padding-top */
+    margin-left: 20px;
+    float: right;
+    width: 200px;
+    padding: /* 10px 20px */ 20px;
+    background: #edf;
+    min-height: 50px;
+    border: thin solid;
+    border-right-style: hidden;
+} .sidebar h1 {
+    text-align: center;
+    margin: 0.25em 0;
+} .sidebar p {
+    margin: 0.25em 0;
+} .sidebar::after {
+    clear: both;
+}
+
+.footer {
+    background: #333;
+    font-size: 14px;
+    padding: 1.25em 1.5em;
+    /* text-align: right; */
+    bottom: 0;
+} .footer .left {
+} .footer .right {
+    float: right;
+} .footer .right::after /* will it work this way? */{
+    clear: both; /* not really needed actually */
+} .footer p {
+    font-size: inherit;
+    color: #aaa; /*aaaa*/
+    margin: 0;
+} .footer a {
+    color: silver;
+}
+
+h1 {
+    color: #222; /* "a nice shade of black" */
+    font-size: 32px;
+    margin: 0.5em 0; /* perfect horizontal! */
+}
+p, li {
+    color: #111;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 0.75em 0;
+}
+a {
+    font-weight: bold;
+}
+ul, ol {
+    margin: 0;
+    padding: 0 1.5em;
+}
+li {
     margin: 0;
 }
