@@ -8,7 +8,7 @@ const website = express();
 website.set("views", root);
 website.set("view engine", "ejs");
 
-/*/ Unneeded, nginx handles extensions
+/*// Unneeded, nginx handles extensions
 function doesFileExist(path) {
     try {
         readFileSync(path);
@@ -26,7 +26,7 @@ function getExt(path) {
 
 website.get(/^\/.*\.ejs$/, (req, res) => { // "/***.ejs"
     let p = root+req.path;
-    console.log(p);
+    //console.log(p);
     ejs.renderFile(p, {}, {}, (err, str) => {
         if (err) {
             console.log(err);
