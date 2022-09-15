@@ -72,8 +72,9 @@
             Curabitur venenatis nec dui quis interdum.
         </p>
     </div>
+    <% addViews(path) %>
     <%- include(ejs_root+"footer", {
-        left: "Etiam: et tortor quis",
+        left: "Etiam et tortor: "+views[path],
         right: "<a href=\"/\">To index</a>"
     }); %>
 </div>

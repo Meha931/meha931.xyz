@@ -19,7 +19,9 @@
             An icy desert &#129482;
         </p>
     </div>
+    <% addViews(path) %>
     <%- include(ejs_root+"footer", {
+        left: views["/404.ejs"]+" people got lost here",
         right: "<a href=\"/\">To index</a>"
     }); %>
 </div>

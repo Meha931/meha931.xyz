@@ -51,12 +51,14 @@
                 "<s>although it still might get DDOSed probably so don't do it please</s>. "+
                 "I think Cloudflare also overrides my Let's Encrypt certificates somehow.",
                 "Todo: make an FTP and maybe a mail servers, port some games from the "+
-                "old website, actually add view counts, make <s>a blog</s> just a bio... "+
+                "old website, make <s>a blog</s> just a bio... "+
                 "It's still a work in progress!"
             ]
         }); %>
     </div>
+    <% addViews(path); %>
     <%- include(ejs_root+"footer", {
+        left: "Views: "+views[path]
     }); %>
 </div>
 </body>
