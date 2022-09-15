@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <%- include("../includables/head", {title: "404"}); %>
+    <%- include(ejs_root+"head", {title: "404"}); %>
 </head>
 <body>
 <div class="container">
-    <%- include("../includables/header", {
+    <%- include(ejs_root+"header", {
         title: "404",
         subtitle: "Not found"
     }); %>
@@ -19,7 +19,7 @@
             An icy desert &#129482;
         </p>
     </div>
-    <%- include("../includables/footer", {
+    <%- include(ejs_root+"footer", {
         right: "<a href=\"/\">To index</a>"
     }); %>
 </div>

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <%- include("../includables/head", {title: "Styletest"}); %>
+    <%- include(ejs_root+"head", {title: "Styletest"}); %>
 </head>
 <body>
 <div class="container">
-    <%- include("../includables/header", {
+    <%- include(ejs_root+"header", {
         title: "Lorem ipsum",
         subtitle: "Dolor sit amet, consectetur adipiscing"
     }); %>
     <div class="content">
-        <%- include("../includables/sidebar", {
+        <%- include(ejs_root+"sidebar", {
             title: "Elit",
             pretext: "Duis ac sagittis sapien. Interdum et malesuada fames:",
             list: {
@@ -34,7 +34,7 @@
         <p>
             Donec sed sem id neque mattis pulvinar eget et metus? Vestibulum suscipit:
         </p>
-        <%- include("../includables/list", {
+        <%- include(ejs_root+"list", {
             type: "ul",
             entries: [
                 "Dui eu maximus rhoncus;",
@@ -50,7 +50,7 @@
                 "At maximus orci risus ut orci."
             ]
         }); %>
-        <%- include("../includables/list", {
+        <%- include(ejs_root+"list", {
             type: "ol",
             entries: [
                 "Duis vel turpis nec purus fringilla;",
@@ -72,7 +72,7 @@
             Curabitur venenatis nec dui quis interdum.
         </p>
     </div>
-    <%- include("../includables/footer", {
+    <%- include(ejs_root+"footer", {
         left: "Etiam: et tortor quis",
         right: "<a href=\"/\">To index</a>"
     }); %>

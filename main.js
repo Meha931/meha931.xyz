@@ -3,6 +3,7 @@ const ejs = require("ejs");
 const {readFileSync, writeFileSync} = require("fs");
 
 const root = "root";
+const ejs_root = __dirname+"/includables/"
 
 const website = express();
 website.set("views", root);
@@ -27,7 +28,7 @@ function getExt(path) {
 website.get(/^\/.*\.ejs$/, (req, res) => { // "/***.ejs"
     let p = root+req.path;
     //console.log(p);
-    ejs.renderFile(p, {}, {}, (err, str) => {
+    ejs.renderFile(p, {ejs_root: ejs_root}, {}, (err, str) => {
         if (err) {
             console.log(err);
             res.sendStatus(400);

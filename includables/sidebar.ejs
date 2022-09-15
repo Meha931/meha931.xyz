@@ -6,7 +6,7 @@
         <p><%- pretext %></p>
     <% } %>
     <% if (typeof list !== "undefined") { %>
-        <%- include("../includables/list", list); %>
+        <%- include(ejs_root+"list", list); %>
     <% } %>
     <% if (typeof posttext !== "undefined") { %>
         <p><%- posttext %></p>

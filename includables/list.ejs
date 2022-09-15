@@ -1,7 +1,7 @@
 <%- "<"+type+">" %>
 <% entries.forEach((entry) => { %>
     <% if (typeof entry === "object") { %>
-        <%- include("../includables/list", entry); %>
+        <%- include(ejs_root+"list", entry); %>
     <% } else { %>
         <li><%- entry %></li>
     <% } %>

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <%- include("../includables/head", {title: "Meha931"}); %>
+    <%- include(ejs_root+"head", {title: "Meha931"}); %>
 </head>
 <body>
 <div class="container">
-    <%- include("../includables/header", {
+    <%- include(ejs_root+"header", {
         title: "Meha931's website",
         subtitle: "Now definitely completely online"
     }); %>
     <div class="content">
-        <%- include("../includables/sidebar", {
+        <%- include(ejs_root+"sidebar", {
             title: "Links",
             pretext: "Some other pages:",
             list: {
@@ -37,7 +37,7 @@
             And so... I don't know what else to put here, so I'll
             just list some technical details:
         </p>
-        <%- include("../includables/list", {
+        <%- include(ejs_root+"list", {
             type: "ul",
             entries: [
                 "The pages are hosted at a very weak VPS that I for about 1$/month. "+
@@ -56,7 +56,7 @@
             ]
         }); %>
     </div>
-    <%- include("../includables/footer", {
+    <%- include(ejs_root+"footer", {
     }); %>
 </div>
 </body>
