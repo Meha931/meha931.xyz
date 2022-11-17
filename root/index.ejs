@@ -14,7 +14,9 @@
             Soon it'll be a completely different place!
         </p>
     </div>
+    <% addViews(path); %>
     <%- include(ejs_root+"footer", {
+        left: `Views: ${views[path]}`,
         center: `<img src="/mehabanner.png" alt="Banner">`
     }); %>
 </div></body>

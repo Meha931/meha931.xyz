@@ -42,6 +42,7 @@ body {
 }
 .footer {
     background:rgb(60, 65, 79);
+    color: silver;
     height: 3em;
     min-height: 31px;
 }
@@ -50,6 +51,7 @@ body {
     text-align: left;
 }
 .footer .f-center {
+    width: 100px;
     /* margin-left: auto;
     margin-right: auto; */
     text-align: center;
@@ -67,6 +69,7 @@ body {
     table-layout: fixed;
 }
 .oldgrid td {
+    padding: 0 0.75em;
     display: table-cell;
     vertical-align: middle;
     /*maybe if i put it multiple times it will work*/
