@@ -25,7 +25,6 @@ body {
 .headbar {
     /* background:rgb(187, 173, 133); */
     background: rgb(60, 65, 79);
-    text-align: center;
     font-size: 14pt;
     /* color: rgb(168, 202, 250); */
     height: 3em;
@@ -33,9 +32,8 @@ body {
 .headbar a {
     color: rgb(168, 202, 250);
 }
-.headbar table {
-    width: 100%;
-    height: 100%;
+.headbar .oldgrid {
+    text-align: center;
 }
 .content {
     background: rgb(245, 222, 204);
@@ -45,6 +43,38 @@ body {
 .footer {
     background:rgb(60, 65, 79);
     height: 3em;
+    min-height: 31px;
+}
+.footer .f-left {
+    /* margin-right: auto; */
+    text-align: left;
+}
+.footer .f-center {
+    /* margin-left: auto;
+    margin-right: auto; */
+    text-align: center;
+}
+.footer .f-right {
+    /* margin-left: auto; */
+    text-align: right;
+}
+.footer img {
+    margin: auto;
+}
+.oldgrid {
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+}
+.oldgrid td {
+    display: table-cell;
+    vertical-align: middle;
+    /*maybe if i put it multiple times it will work*/
+    display: table-cell;
+    display: table-cell;
+    display: table-cell;
+    display: table-cell;
+    /*of course not*/
 }
 a {
     font-weight: bold;

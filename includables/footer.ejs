@@ -1,2 +1,19 @@
 <div class="footer">
+<table class="oldgrid"><tbody><tr>
+    <td class="f-left">
+        <% if (typeof left !== "undefined") { %>
+            <%- left %>
+        <% } %>
+    </td>
+    <td class="f-center">
+        <% if (typeof center !== "undefined") { %>
+            <%- center %>
+        <% } %>
+    </td>
+    <td class="f-right">
+        <% if (typeof right !== "undefined") { %>
+            <%- right %>
+        <% } %>
+    </td>
+</tr></tbody></table>
 </div>
