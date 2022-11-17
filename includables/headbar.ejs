@@ -1,0 +1,13 @@
+<div class="headbar">
+<!--
+    Oh no, a <table>!
+    Anyway,
+-->
+<table><tbody><tr>
+    <% [
+        ["Home", "/"]
+    ].forEach((entry) => { %>
+        <td><%- `<a href="${entry[1]}">${entry[0]}</a>` %></td>
+    <% }); %>
+</tr></tbody></table>
+</div>

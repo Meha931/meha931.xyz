@@ -3,11 +3,9 @@
 <head>
     <%- include(ejs_root+"head", {title: "Meha931"}); %>
 </head>
-<body>
-<div class="container">
-    <%- include(ejs_root+"header", {
-        title: "Under (re)construction",
-    }); %>
+<body><div class="container">
+    <%- include(ejs_root+"header"); %>
+    <%- include(ejs_root+"headbar"); %>
     <div class="content">
         <h1>Hewlo!</h1>
         <p>Welcome to my website!</p>
@@ -16,10 +14,6 @@
             Soon it'll be a completely different place!
         </p>
     </div>
-    <% addViews(path); %>
-    <%- include(ejs_root+"footer", {
-        left: "Views: "+views[path]
-    }); %>
-</div>
-</body>
+    <%- include(ejs_root+"footer", {}); %>
+</div></body>
 </html>

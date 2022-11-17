@@ -1,29 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <%- include(ejs_root+"head", {title: "404"}); %>
+    <%- include(ejs_root+"head", {title: "Meha931"}); %>
 </head>
-<body>
-<div class="container">
-    <%- include(ejs_root+"header", {
-        title: "404",
-        subtitle: "Not found"
-    }); %>
+<body><div class="container">
+    <%- include(ejs_root+"header"); %>
+    <%- include(ejs_root+"headbar"); %>
     <div class="content">
-        <p>Um... Perhaps you should go back?</p>
-        <br>
-        <br>
-        <br>
-        <p>
-            What a desert.<br>
-            An icy desert &#129482;
-        </p>
+        <h1>404</h1>
+        <p>Uh... There isn't anything else at the moment, really.</p>
     </div>
-    <% addViews(path) %>
-    <%- include(ejs_root+"footer", {
-        left: views["/404.ejs"]+" people got lost here",
-        right: "<a href=\"/\">To index</a>"
-    }); %>
-</div>
-</body>
+    <%- include(ejs_root+"footer", {}); %>
+</div></body>
 </html>
