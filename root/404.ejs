@@ -10,9 +10,9 @@
         <h1>404</h1>
         <p>Uh... There isn't anything else at the moment, really.</p>
     </div>
-    <% addViews(path); %>
+    <% addViews("/404.ejs"); %>
     <%- include(ejs_root+"footer", {
-        left: `${views[path]} got lost here`
+        left: `${views["/404.ejs"]} got lost here`
     }); %>
 </div></body>
 </html>
