@@ -23,7 +23,7 @@ a {
 }
 .header {
     background:rgb(125, 153, 228);
-    background-image: url("/header-bg.png");
+    background-image: url("/bgs/header-bg.png");
     background-size: cover;
     background-position: center;
     height: 10vw;
