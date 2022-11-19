@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <%- include(ejs_root+"head", {title: "Meha931"}); %>
+    <%- include(ejs_root+"head", {title: "Meha931 - Home"}); %>
 </head>
 <body><div class="container">
     <%- include(ejs_root+"header"); %>
@@ -10,8 +10,22 @@
         <h1>Hewlo!</h1>
         <p>Welcome to my website!</p>
         <p>
-            Currently it's undergoing a reconstruction.
-            Soon it'll be a completely different place!
+            Here you can find some info about me, as well as some
+            of my projects. Most of the latter can be found at my
+            <a href="https://meha931.github.io">previous website</a>
+            though, and this place is mostly about myself.
+        </p>
+        <p>
+            So, have a pleasant stay at my website!
+        </p>
+        <p>
+            If you have any questions, you can
+            <a href="/about.ejs#contact">contact</a> me in some places.
+            If it's related to the website, you can see the
+            <a href="https://github.com/Meha931/meha931.xyz">source code</a>
+            or open an
+            <a href="https://github.com/Meha931/meha931.xyz/issues">issue</a>
+            if you think that I have weird coding habits <s>(I do)</s>.
         </p>
     </div>
     <% addViews(path); %>

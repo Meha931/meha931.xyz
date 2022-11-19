@@ -4,6 +4,13 @@ body {
     margin: 0;
     padding: 0;
     min-width: 600px;
+    font-size: 20px;
+}
+p {
+    line-height: 1.5em;
+}
+a {
+    font-weight: bold;
 }
 .container {
     background: #fff;
@@ -25,7 +32,7 @@ body {
 .headbar {
     /* background:rgb(187, 173, 133); */
     background: rgb(60, 65, 79);
-    font-size: 14pt;
+    font-size: 1em;
     /* color: rgb(168, 202, 250); */
     height: 3em;
 }
@@ -37,21 +44,22 @@ body {
 }
 .content {
     background: rgb(245, 222, 204);
-    padding: 10px;
+    padding: 1em 2em;
     min-height: 100px;
 }
 .footer {
     background:rgb(60, 65, 79);
     color: silver;
     height: 3em;
-    min-height: 31px;
+    min-height: 31px; /*bar*/
 }
 .footer .f-left {
     /* margin-right: auto; */
     text-align: left;
 }
 .footer .f-center {
-    width: 100px;
+    /* width: 100px; */
+    min-width: 88px; /*bar*/
     /* margin-left: auto;
     margin-right: auto; */
     text-align: center;
@@ -78,7 +86,4 @@ body {
     display: table-cell;
     display: table-cell;
     /*of course not*/
-}
-a {
-    font-weight: bold;
 }

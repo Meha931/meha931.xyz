@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include(ejs_root+"head", {title: "Meha931 - About"}); %>
+</head>
+<body><div class="container">
+    <%- include(ejs_root+"header"); %>
+    <%- include(ejs_root+"headbar"); %>
+    <div class="content">
+        <h1>About</h1>
+        <p>
+            I don't usually like to tell about myself (probably because
+            I don't know what to say).
+        </p>
+        <p>
+            I like to program, sometimes on JS, but lately usually on C.
+            Am not very skilled in either, just enough to use them in small
+            projects. Some of the best are
+            <a href="https://meha931.github.io/minesweeper">Minesweeper</a> and
+            <a href="https://meha931.github.io/snake">Snake</a> games.
+        </p>
+        <p>
+            And of course, I do like playing games, but I try not to spend too
+            much time in them <s>though I often do</s>.
+            Some of my achievements (in games in general) include the completed P5
+            in Hollow Knight and quite a few played mods for Portal.
+        </p>
+        <p>
+            As for the other hobbies...
+            <br>
+            I used to draw sometimes, but I do it very rarely. I don't think there
+            are any good drawings that I can show (Seriously, I don't draw much,
+            and last time I published anything I wasn't as good as now, so it would
+            be appreciated if you won't ask for them, at least now).
+            <br>
+            I also learn languages sometimes, though I wouldn't like to tell about
+            these publicly. Let's just consider me to know about 3.5 in total :p
+        </p>
+        <h1 id="contact">Contact</h1>
+        <p>
+            You can usually find me with the "Meha931" name/tag on
+            most places. I don't think there are many impersonators
+            of me, but it's certainly taken by me on Steam and Github.
+        </p>
+        <br>
+        <br>
+        <br>
+        <p><small><small><small>
+            oh this all was difficult for me to write
+            <br>
+            how talk good
+        </small></small></small></p>
+    </div>
+    <% addViews(path); %>
+    <%- include(ejs_root+"footer", {
+        left: `Views: ${views[path]}`
+    }); %>
+</div></body>
+</html>
