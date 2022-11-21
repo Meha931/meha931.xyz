@@ -87,3 +87,9 @@ a {
     display: table-cell;
     /*of course not*/
 }
+.article h1 {
+    text-align: center;
+}
+.article p {
+    text-align: justify;
+}

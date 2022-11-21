@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include(ejs_root+"head", {title: "E10 - Introduction"}); %>
+</head>
+<body><div class="container">
+    <%- include(ejs_root+"header"); %>
+    <%- include(ejs_root+"headbar"); %>
+    <div class="content article">
+<!-- Article start -->
+<h1>
+    The Essense of the 10s
+    <br>
+    <small>Introduction</small>
+</h1>
+<p>
+    <s>Another talk about nostalgia and how things were better before.</s>
+</p>
+<p>
+    Maybe... But I just think that the 10s are somehow more special, at least to me,
+    than the other past decades.
+    <br>
+    Especially special, heh.
+</p>
+<p>
+    I mean, even the 90s and 00s don't feel as nostalgic as the 10s.
+    <s>I wasn't during the former anyways.</s>
+</p>
+<p>
+    And well, this feeling isn't really strongly tied to the years 2010-2020 - more likely, 2005-2015.
+    The 00s already feel so distant, but the 10s... they're still here, still felt by many,
+    even in the 20s.
+</p>
+<p>
+    In this series of writings, I will sometimes tell about things made around 2010 that have this
+    lovely nostalgic essense.
+</p>
+<br>
+<p>
+    <small>Just remember that this all is very subjective or sometimes even not supported by any evidence and
+    is mostly just mere personal thoughts of some nerd that still sometimes irrationally clings
+    to the past blablablabla.<br>bla.</small>
+</p>
+<!-- Article end -->
+    </div>
+    <% addViews(path); %>
+    <%- include(ejs_root+"footer", {
+        left: `Views: ${views[path]}`
+    }); %>
+</div></body>
+</html>

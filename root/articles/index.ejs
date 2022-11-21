@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include(ejs_root+"head", {title: "Meha931 - Articles"}); %>
+</head>
+<body><div class="container">
+    <%- include(ejs_root+"header"); %>
+    <%- include(ejs_root+"headbar"); %>
+    <div class="content">
+        <h1>Articles</h1>
+        <p>Aka Essays, <s>aka madman's writings</s>.</p>
+        <p>
+            Just some writings made by me. These are mostly not objective statements,
+            but rather personal opinions on some subjects, written whenever and
+            how-ever I wanted to share my thoughts, or whenever I remembered the latter.
+        </p>
+        <p>
+            Don't forget to take these with a grain of salt and pepper/sugar/cinnamon to taste :p
+        </p>
+
+        <h2>The Essense of the 10s</h2>
+        <ul>
+            <li><a href="essense/">Introduction</a></li>
+        </ul>
+    </div>
+    <% addViews(path); %>
+    <%- include(ejs_root+"footer", {
+        left: `Views: ${views[path]}`
+    }); %>
+</div></body>
+</html>

@@ -6,6 +6,7 @@
 <table class="oldgrid"><tbody><tr>
     <% [
         ["Home", "/"],
+        ["Articles", "/articles/"],
         ["About", "/about.ejs"]
     ].forEach((entry) => { %>
         <td><%- `<a href="${entry[1]}">${entry[0]}</a>` %></td>
