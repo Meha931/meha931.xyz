@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include(ejs_root+"head", {title: "Meha931 - Marfik"}); %>
+</head>
+<body><div class="container">
+    <%- include(ejs_root+"header"); %>
+    <%- include(ejs_root+"headbar"); %>
+    <div class="content">
+        <h1>
+            Marfik
+            <br>
+            <small><small><small>
+                Aka Marfik Prime IV
+            </small></small></small>
+        </h1>
+        <p>
+            A demo for the Marfik stylesheet - named after the planet in Starbound
+            that I made the first header background on.
+        </p>
+        <p>
+            I don't know why I keep naming these styles.
+            <br>
+            Maybe I want(ed) to make several of them for training and
+            show<s>ing off</s>casing.
+        </p>
+
+        <h1>Lorem ipsum</h1>
+        <p>
+            Dolor sit amet, consectetur <a href="https://www.lipsum.com/">adipiscing elit</a>.
+            Quisque finibus volutpat est, eu porta ligula egestas ac.
+            Sed consectetur fermentum est, in mattis mauris blandit vitae.
+            Sed sed tincidunt ex.
+            Curabitur pulvinar sem sit amet augue scelerisque, maximus egestas lorem faucibus.
+        </p>
+        <h2>Donec &lt;br&gt;</h2>
+        <p>
+            Nam porttitor, diam vitae varius lobortis <b>"&lt;br&gt;"</b>, odio magna sollicitudin sapien,
+            vitae feugiat nibh orci sed nunc.
+            <br>
+            In fermentum diam nisi, sit amet pellentesque est porttitor sit amet.
+        </p>
+        <h2>Donec Emoji</h2>
+        <p>
+            Tincidunt, nunc et elementum mattis
+        </p>
+        <h2>Donec &lt;ul&gt;</h2>
+        <p>
+            Ex metus consectetur nulla, hendrerit aliquam nibh mauris sit amet risus:
+        </p>
+        <ul>
+            <li>
+                Integer vitae enim varius;
+            </li>
+            <li>
+                Aliquet mi a, eleifend mauris.
+                Pellentesque non purus interdum lorem aliquet pretium vel at libero.
+                Fusce hendrerit posuere metus.
+                Fusce bibendum erat sed enim bibendum euismod.
+                Aenean eget augue tortor.
+            </li>
+            <li>
+                Nunc iaculis magna tempor, &lt;br&gt; euismod odio a.
+                <br>
+                Dictum tellus? Proin tempor mattis dui sit amet fringilla.
+            </li>
+            <li>
+                In ornare est erat (vitae sollicitudin eros consectetur sed).
+            </li>
+            <li>
+                Sed ullamcorper est ac porta semper.
+            </li>
+        </ul>
+        <h2>Vivamus id leo ".article" euismod</h2>
+        <p>
+            Convallis quam vitae "Article", ultricies tortor:
+        </p>
+        <div class="article">
+            <h1>Lorem Article</h1>
+            <p>
+                Mauris at nibh id orci iaculis ultrices dignissim non risus.
+                Duis eu lectus elit.
+                Integer venenatis quis mauris at dapibus.
+                Curabitur quis ipsum accumsan, viverra dui convallis, venenatis dolor.
+                Morbi sit amet convallis lectus.
+                Integer accumsan ex sit amet nibh aliquam pharetra.
+                Fusce posuere urna in lectus porttitor, porttitor molestie nisl tempor.
+                Proin ornare lorem sed ultrices cursus.
+            </p>
+        </div>
+    </div>
+    <% addViews(path); %>
+    <%- include(ejs_root+"footer", {
+        left: `Curious: ${views[path]}`
+    }); %>
+</div></body>
+</html>

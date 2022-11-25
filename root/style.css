@@ -68,6 +68,9 @@ a {
     /* margin-left: auto; */
     text-align: right;
 }
+.footer a {
+    color: inherit;
+}
 .footer img {
     margin: auto;
 }
