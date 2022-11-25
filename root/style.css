@@ -6,7 +6,7 @@ body {
     min-width: 600px;
     font-size: 20px;
 }
-p {
+p,ul {
     line-height: 1.5em;
 }
 a {

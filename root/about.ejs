@@ -9,6 +9,11 @@
     <div class="content">
         <h1>About</h1>
         <p>
+            Here you can find general information about this website and me.
+        </p>
+
+        <h2>The me</h2>
+        <p>
             I don't usually like to tell about myself (probably because
             I don't know what to say).
         </p>
@@ -36,20 +41,90 @@
             I also learn languages sometimes, though I wouldn't like to tell about
             these publicly. Let's just consider me to know about 3.5 in total :p
         </p>
-        <h1 id="contact">Contact</h1>
-        <p>
-            You can usually find me with the "Meha931" name/tag on
-            most places. I don't think there are many impersonators
-            of me, but it's certainly taken by me on Steam and Github.
-        </p>
-        <br>
-        <br>
-        <br>
         <p><small><small><small>
             oh this all was difficult for me to write
             <br>
             how talk good
         </small></small></small></p>
+        
+        <h3 id="contact">Contact</h3>
+        <p>
+            You can usually find me with the "Meha931" name/tag on
+            most places. I don't think there are many impersonators
+            of me, but it's certainly taken by me on Steam and Github.
+        </p>
+        <p>
+            For now I would like to accept questions only on Steam and Github:
+            send me a friend request on the former or open an issue on the latter.
+        </p>
+
+        <h2>The tools</h2>
+        <p>
+            Since I moved to Linux, I now mostly use open-source software.
+            <br>
+            Which sometimes is quite difficult to use because it's never fully
+            compatible with commonly used "regular" software, and sometimes it
+            just doesn't work properly.
+        </p>
+        <p>
+            On the other hand, Linux allows quite a lot of things to be customized.
+            It takes some experience, but the end result is very satisfying.
+        </p>
+        <p>
+            So here are some (hard-/software) tools that I use:
+        </p>
+        <ul>
+            <li>
+                Arch Linux <s>btw</s> with Sway WM and some programs from Gnome - workspace;
+            </li>
+            <li>
+                LibreOffice, GNU Octave, Qucs-S, VSC (OSS) - studying;
+            </li>
+            <li>
+                OBS Studio, Blender, ffmpeg (or HandBrake if it fails), GIMP, Krita -
+                video and image editing;
+            </li>
+            <li>
+                Firefox, Discord, Steam, Telegram - browsing and communication.
+            </li>
+        </ul>
+
+        <h2>The site</h2>
+        <p>
+            Here's some technical info about the site:
+        </p>
+        <ul>
+            <li>
+                Hosted on a VPS that costs about $1/month.
+                I also use it as a VPN sometimes.
+            </li>
+            <li>
+                Requests to this server are routed by Nginx. Most files
+                are served by it too, but .ejs ones are handled by Node with
+                some plugins.
+            </li>
+            <li>
+                Let's Encrypt certificates, updated manually because I still
+                don't really trust Certbot to edit my fragile Nginx config.
+            </li>
+            <li>
+                Views and other data that's not possible on a static page
+                is handled by the same server too. That was actually the reason
+                why I decided to host the website on a server, though I might
+                switch to third parties sometime.
+            </li>
+            <li>
+                The website's protected by Cloudflare. Although I have no clear idea of
+                how it does the protection, because I still get a lot of strange
+                requests.
+            </li>
+            <li>
+                And the domain registrar... well, you can just do a Whois lookup 😅
+            </li>
+        </ul>
+        <p>
+            <s>Just don't attack the server please</s>
+        </p>
     </div>
     <% addViews(path); %>
     <%- include(ejs_root+"footer", {
