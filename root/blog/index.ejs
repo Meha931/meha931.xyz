@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include(ejs_root+"head", {title: "Meha931 - Blog"}); %>
+</head>
+<body><div class="container">
+    <%- include(ejs_root+"header"); %>
+    <%- include(ejs_root+"headbar"); %>
+    <div class="content">
+        <h1>Blog</h1>
+        <p>
+            Previously the main collection of my thoughs was to be called "Articles".
+        </p>
+        <p>
+            At first I wanted to tell about my thoughts about the 2010's and, somewhy,
+            my love of the Source engine. Yet I didn't really have any proper ideas
+            ("proper" means "with proofs/facts"). And so these both were in an
+            unfinished state, and I didn't even start writing anything about the
+            second one.
+        </p>
+        <p>
+            So now I've decided to use a more humble name.
+            <br>
+            Welcome to the <b>blog</b> of mine.
+        </p>
+        <ul>
+            <li>Well... So far there's nothing here, you may come back later.</li>
+        </ul>
+    </div>
+    <% addViews(path); %>
+    <%- include(ejs_root+"footer", {
+        left: `Views: ${views[path]}`
+    }); %>
+</div></body>
+</html>
