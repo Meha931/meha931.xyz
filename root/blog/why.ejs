@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include(ejs_root+"head", {title: "Meha931 - Blog - Why blog"}); %>
+</head>
+<body><div class="container">
+    <%- include(ejs_root+"header"); %>
+    <%- include(ejs_root+"headbar"); %>
+    <div class="content">
+        <h1>Why blog</h1>
+        <p>
+            A question that I've been asking myself many times
+            since I made the index page for this section.
+        </p>
+            Why do I even need a blog or some other kind of place
+            where I can post statements or stories?
+        <p>
+        </p>
+            The main problem is that others can exploit the info
+            I give or they may be dissatisfied about it. If it's
+            someone I know, they may get worried about something,
+            and if it's someone else... well, then I may get
+            worried about myself.
+        </p>
+        <p>
+            On the other hand, the information may be useless,
+            but it's unlikely that it can be of no worth at all.
+        </p>
+        <p>
+            The second problem is that I may be wrong about many
+            things, and even though I can edit these pages
+            whenever I want, it still would be strange to
+            retract.
+        </p>
+        <p>
+            ...or would it?
+        </p>
+        <p>
+            Aside from uselessness or incorrectness, which may
+            be subjective, the only real problem is that I am
+            afraid of specific people seeing the info. Which
+            can probably be avoided by not posting anything
+            sensitive.
+        </p>
+        <p>
+            So yes, maybe I should worry less and just post.
+        </p>
+        <p>
+            <s>
+                So what's the point in this page if I reconvinced
+                myself already?
+                Maybe to tell others I am paranoid and
+                non-confident.
+            </s>
+            <br>
+            ...or maybe just very cautious.
+        </p>
+    </div>
+    <% addViews(path); %>
+    <%- include(ejs_root+"footer", {
+        left: `Views: ${views[path]}`
+    }); %>
+</div></body>
+</html>
